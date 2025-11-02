@@ -1,0 +1,76 @@
+.app-section {
+  background: #f8fafc;
+  padding: 2rem 0;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.app-subtitle {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.app-image {
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.app-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .app-image {
+    min-height: 200px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 20px;
+  }
+
+  .app-subtitle {
+    font-size: 14px;
+  }
+
+  .pill {
+    width: 100%;
+  }
+}
