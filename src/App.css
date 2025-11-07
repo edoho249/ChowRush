@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+/* Logo styling */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -33,9 +34,8 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
+/* Removed global .card to avoid conflict with PopularDishes.module.css */
+/* .card { padding: 2em; } */
 
 .read-the-docs {
   color: #888;
